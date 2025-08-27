@@ -1,11 +1,9 @@
 # SwiftMove Removals Website
 
 ## Student Information
-- **Name:** [Your Full Name]
-- **Student Number:** [Your Student Number]
-- **Course:** [Your Course Name and Code]
-- **Institution:** The Independent Institute of Education (Pty) Ltd
-- **Academic Year:** 2025
+- **Name:** Tamunonga Brendon Joni
+- **Student Number:** ST10489366
+- **Module:** WEDE5020
 
 ## Project Overview
 This project involves the design and development of a responsive, five-page website for SwiftMove Removals, a fictional small business specializing in relocation services across Gauteng, South Africa. The website aims to establish an online presence, generate leads through quote requests, and provide essential information to potential customers.
@@ -66,7 +64,3 @@ This project involves the design and development of a responsive, five-page webs
 - Visual Studio Code: Code editor
 - GitHub: Version control and repository hosting
 - Google Fonts: Typography resources
-
----
-
-**Note:** This project was developed for academic purposes as part of [Subject Name and Code] requirements.
