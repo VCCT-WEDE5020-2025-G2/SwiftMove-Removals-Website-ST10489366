@@ -48,11 +48,6 @@ This project involves the design and development of a responsive, five-page webs
 ## References
 ### Academic References
 
-
-### Technical Resources
-- MDN Web Docs. (2023). *HTML: HyperText Markup Language*. https://developer.mozilla.org/en-US/docs/Web/HTML
-- MDN Web Docs. (2023). *CSS: Cascading Style Sheets*. https://developer.mozilla.org/en-US/docs/Web/CSS
-
 ### Visual Resources
 - All photographs and graphics created or sourced by the developer for this project.
 - Color scheme and design elements developed specifically for SwiftMove Removals brand identity.
