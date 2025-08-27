@@ -25,10 +25,7 @@ This project involves the design and development of a responsive, five-page webs
 - **Testimonial Section:** Customer reviews on homepage to build credibility.
 
 ## Timeline and Milestones
-- **Part 1 (Complete):** Project proposal approval and content research.
-- **Part 2 (Complete):** HTML structure and basic content integration.
-- **Part 3 (Current):** CSS styling, responsiveness, and GitHub deployment.
-- **Final Submission:** [Insert your final submission date]
+- **Part 1 (Complete):** Project proposal approval, content research, html files and GitHub repository
 
 ## Sitemap
 
@@ -50,7 +47,7 @@ This project involves the design and development of a responsive, five-page webs
 
 ## References
 ### Academic References
-- The Independent Institute of Education. (2025). *Website Development Project Brief*. [Subject Name and Code].
+
 
 ### Technical Resources
 - MDN Web Docs. (2023). *HTML: HyperText Markup Language*. https://developer.mozilla.org/en-US/docs/Web/HTML
