@@ -59,4 +59,4 @@ This project involves the design and development of a responsive, five-page webs
 
 ### GitHub Repository
  - The source code for this website is available at:
-   [https://github.com/BrendonJoni/SwiftMove-Removals-Website.git]
+   - [https://github.com/BrendonJoni/SwiftMove-Removals-Website.git]
