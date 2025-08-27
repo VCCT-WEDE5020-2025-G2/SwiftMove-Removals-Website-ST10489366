@@ -28,7 +28,7 @@ This project involves the design and development of a responsive, five-page webs
 - **Part 1 (Complete):** Project proposal approval, content research, html files and GitHub repository
 
 ## Sitemap
-https://github.com/BrendonJoni/SwiftMove-Removals-Website/blob/95551a27705499eba1c00a80a12014f99e68703f/sitemap.png
+![Image alt](https://github.com/BrendonJoni/SwiftMove-Removals-Website/blob/95551a27705499eba1c00a80a12014f99e68703f/sitemap.png)
 
 
 ## Changelog
