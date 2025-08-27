@@ -46,7 +46,7 @@ This project involves the design and development of a responsive, five-page webs
 - Created sitemap and project structure plan
 
 ## References
-### Academic References
+- All images that were used in this project were taken by Tamunonga Brendon Joni
 
 ### Visual Resources
 - All photographs and graphics created or sourced by the developer for this project.
