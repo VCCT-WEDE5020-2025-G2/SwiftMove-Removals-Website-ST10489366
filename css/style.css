@@ -10,22 +10,31 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #000000;
-    background-color: #f4f4f4;
+    background-color: hsl(0, 100%, 99%);
 }
 
 /* ==================== HEADER & NAVIGATION ==================== */
 header {
     background-color: #003366; /* Navy Blue */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: sticky;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: relative;
     top: 0;
-    z-index: 100;
+    z-index: 50;
+}
+header .logo {
+    color: rgb(9, 229, 241);
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem 2rem;
+    display: inline-block;
+    text-size-adjust: 100%;
+
 }
 
 nav ul {
     list-style: none;
     text-align: center;
-    padding: 1rem 0;
+    padding: 2rem 0;
 }
 
 nav ul li {
@@ -277,8 +286,18 @@ footer {
 
 /* ==================== IMAGE STYLES ==================== */
 img {
-    max-width: 100%;
+    width: 100%;
+    max-width: 400px;
     height: auto;
     border-radius: 8px;
-    margin: 1rem 0;
+    display: block;
+    margin: 20px auto;
+}
+.logo img {
+    width: 20px;
+    height: 20px;
+    border-radius: 8px;
+    display: block;
+    margin: 10px auto;
+    font-weight: 1.8rem;
 }
