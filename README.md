@@ -26,36 +26,90 @@ This project involves the design and development of a responsive, five-page webs
 
 ## Timeline and Milestones
 - **Part 1 (Complete):** Project proposal approval, content research, html files and GitHub repository
+- **Part 2 (Complete):** CSS styling, responsive design, and visual enhancements.
+
+## Technologies Used
+- **HTML5:** Semantic structure and accessibility
+- **CSS3:** Modern styling with Flexbox and Grid layout
+- **Responsive Design:** Media queries for mobile, tablet, and desktop
+- **Git:** Version control
+- **GitHub:** Repository hosting and deployment
 
 ## Sitemap
 ![Image alt](https://github.com/BrendonJoni/SwiftMove-Removals-Website/blob/95551a27705499eba1c00a80a12014f99e68703f/sitemap.png)
 
 
 ## Changelog
-### Version 1.0 (Current)
-- Initialized GitHub repository
-- Created basic HTML structure for all five pages
-- Implemented consistent navigation across all pages
-- Added basic CSS styling for layout and typography
-- Integrated researched content into appropriate pages
-- Created README.md documentation
 
-### Version 0.1
-- Project proposal approved for SwiftMove Removals
-- Conducted content research and sourcing
-- Created sitemap and project structure plan
+### Version 2.0 (Current) - Part 2: CSS Styling & Responsive Design
+- **Enhanced Navigation:** Added company logo and improved menu structure
+- **Modern Hero Section:** Implemented gradient background with two-column layout
+- **Service Cards:** Created interactive card layout with hover effects
+- **Responsive Design:** Added mobile-first media queries with breakpoints at 968px, 768px, and 480px
+- **Typography Scale:** Implemented rem-based typography for better scalability
+- **Form Styling:** Enhanced form elements with focus states and validation styling
+- **Image Optimization:** Added responsive image techniques and proper sizing
+- **Color Scheme:** Consistent use of navy blue (#003366) and orange (#FF6600) throughout
+- **Layout Improvements:** Used CSS Grid and Flexbox for modern layouts
+- **Browser Testing:** Verified compatibility across multiple browsers
 
-## References
-- All images that were used in this project were taken by Tamunonga Brendon Joni
+### Version 1.1 - Part 1 Corrections
+- Fixed HTML semantic structure
+- Improved image file organization
+- Enhanced content readability
+- Updated file naming conventions
 
-### Visual Resources
-- All photographs and graphics created or sourced by the developer for this project.
-- Color scheme and design elements developed specifically for SwiftMove Removals brand identity.
+### Version 1.0 - Part 1: Foundation
+- Initial project setup and repository creation
+- Basic HTML structure for all five pages
+- Content research and sourcing
+- Initial README documentation
 
-### Tools and Platforms
+## Responsive Design Implementation
+The website implements a mobile-first responsive design with the following breakpoints:
+
+- **Desktop:** 1200px+ (Full navigation, multi-column layouts)
+- **Tablet:** 768px - 1199px (Adapted navigation, adjusted grid layouts)
+- **Mobile:** 480px - 767px (Stacked layouts, simplified navigation)
+- **Small Mobile:** < 480px (Optimized for small screens)
+
+### Responsive Features:
+- Flexible grid layouts using CSS Grid and Flexbox
+- Responsive typography using relative units (rem, em)
+- Adaptive navigation menu
+- Responsive images with proper sizing
+- Mobile-optimized forms and buttons
+
+
+#### References
+
+## Technical Resources
+- MDN Web Docs. (2023). *CSS Grid Layout*. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
+- MDN Web Docs. (2023). *Flexbox*. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout
+- MDN Web Docs. (2023). *Responsive Design*. https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design
+
+## Design Resources
+- Google Fonts. (2023). *Segoe UI font stack*.
+- Coolors.co. (2023). *Color palette generator*.
+
+## Visual Resources
+- All photographs and graphics created or sourced by the developer for this project
+- Logo design created specifically for SwiftMove Removals brand identity
+- Color scheme and design elements developed specifically for SwiftMove Removals brand identity
+
+## Tools and Platforms
 - Visual Studio Code: Code editor
 - GitHub: Version control and repository hosting
-- Google Fonts: Typography resources
+- Google Chrome DevTools: Testing and debugging
+
+## Browser Compatibility
+- ✅ Google Chrome (Latest)
+- ✅ Mozilla Firefox (Latest)
+
+
+## Future Enhancements
+- JavaScript form validation
+- Interactive quote calculator
 
 ### GitHub Repository
  - The source code for this website is available at:
