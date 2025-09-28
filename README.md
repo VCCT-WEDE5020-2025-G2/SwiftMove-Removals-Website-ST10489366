@@ -80,8 +80,19 @@ The website implements a mobile-first responsive design with the following break
 - Responsive images with proper sizing
 - Mobile-optimized forms and buttons
 
+## Acknowledgments & AI Assistance
 
-### REFERENCES
+### AI Tools Used
+- **DeepSeek AI:** Utilized for brainstorming sessions, project structure planning, and code organization suggestions. The AI provided conceptual guidance and alternative approaches for responsive design implementation.
+
+### Developer Contribution
+All final design decisions, code implementation, content creation, visual design, and problem-solving were executed independently by the student developer. The AI served as a conceptual assistant only.
+
+## REFERENCES
+
+### AI Resources
+DeepSeek. (2024). *AI language model* [Conceptual assistance]. Used for project structuring and development methodology discussions.
+
 
 ## Technical Resources
 - MDN Web Docs. (2023). *CSS Grid Layout*. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
