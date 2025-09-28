@@ -81,7 +81,7 @@ The website implements a mobile-first responsive design with the following break
 - Mobile-optimized forms and buttons
 
 
-#### References
+### REFERENCES
 
 ## Technical Resources
 - MDN Web Docs. (2023). *CSS Grid Layout*. https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout
