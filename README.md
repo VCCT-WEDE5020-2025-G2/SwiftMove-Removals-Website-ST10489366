@@ -49,7 +49,6 @@ This project involves the design and development of a responsive, five-page webs
 - **Typography Scale:** Implemented rem-based typography for better scalability
 - **Form Styling:** Enhanced form elements with focus states and validation styling
 - **Image Optimization:** Added responsive image techniques and proper sizing
-- **Color Scheme:** Consistent use of navy blue (#003366) and orange (#FF6600) throughout
 - **Layout Improvements:** Used CSS Grid and Flexbox for modern layouts
 - **Browser Testing:** Verified compatibility across multiple browsers
 
