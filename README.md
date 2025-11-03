@@ -30,7 +30,7 @@ This project involves the design and development of a responsive, five-page webs
 - **Part 1 (Complete):** Project proposal approval, content research, HTML structure, and GitHub repository setup.
 - **Part 2 (Complete):** CSS styling, responsive design, and visual enhancements.
 - **Part 3 (Current):** JavaScript functionality, SEO optimization, and enhanced form validation.
-- **Final Submission:** Complete website with all required functionality.
+
 
 ## Technologies Used
 - **HTML5:** Semantic structure and accessibility
