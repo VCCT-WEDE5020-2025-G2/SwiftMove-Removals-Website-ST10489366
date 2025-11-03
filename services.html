@@ -3,7 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Services - SwiftMove Removals</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>Moving Services & Pricing - Residential & Office Relocations | SwiftMove</title>
+    <meta name="description" content="Complete moving services: residential moves, office relocations & professional packing. Get transparent pricing with packages from R1,500. Free instant quotes available.">
+    <meta name="keywords" content="moving services, residential moves, office relocation, packing services, moving prices, removal costs, instant quote, South Africa movers">
+    <meta name="author" content="SwiftMove Removals">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Professional Moving Services & Pricing - SwiftMove Removals">
+    <meta property="og:description" content="Residential moves, office relocations & packing services. Transparent pricing from R1,500. Get your free instant quote today.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://swiftmoveremovals.co.za/services.html">
+    <meta property="og:image" content="https://swiftmoveremovals.co.za/images/moving-services-hero.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://swiftmoveremovals.co.za/services.html">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "SwiftMove Removals Services",
+        "description": "Professional moving and relocation services",
+        "provider": {
+            "@type": "MovingCompany",
+            "name": "SwiftMove Removals"
+        },
+        "areaServed": "South Africa",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Moving Services",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Residential Moves",
+                        "description": "Professional residential moving services"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Office Relocations",
+                        "description": "Business and office moving services"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Packing Services",
+                        "description": "Professional packing and unpacking services"
+                    }
+                }
+            ]
+        }
+    }
+    </script>
+    
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -20,104 +81,155 @@
             </ul>
         </nav>
     </header>
+
     <main>
-        <h1>Our Services</h1>
+        <h1>Our Moving Services</h1>
         <p>We provide a full range of removal services to meet your needs and exceed your expectations.</p>
         <p>Our team is dedicated to ensuring a smooth and hassle-free moving experience for all our clients.</p>
         <p>We understand that every move is unique, which is why we offer personalized solutions tailored to your specific requirements.</p>
 
-        
-        <h2>Residential Moves</h2>
-        <p>Whether you're moving from a studio apartment or a large family home, we handle it with care. Our teams are efficient and respectful of your property.</p>
-        <p>We offer a range of packing options to suit your needs, from DIY packing to full-service packing.</p>
-        <p>Our team is trained in efficient packing techniques to maximize space and protect your belongings.</p>
+        <!-- Services Grid Section -->
+        <section class="services-overview">
+            <div class="services-grid">
+                <!-- Residential Moves Card -->
+                <div class="service-card">
+                    <div class="card-icon">🏠</div>
+                    <h3>Residential Moves</h3>
+                    <p>Whether you're moving from a studio apartment or a large family home, we handle it with care. Our teams are efficient and respectful of your property.</p>
+                    <ul class="service-features">
+                        <li>Apartment & house moves</li>
+                        <li>Fragile item handling</li>
+                        <li>Furniture disassembly/reassembly</li>
+                        <li>Flexible scheduling</li>
+                    </ul>
+                    <div class="card-footer">
+                        <span class="price">From R1,500</span>
+                        <button class="card-btn" onclick="scrollToQuote()">Get Quote</button>
+                    </div>
+                </div>
 
-        <h2>Office Relocations</h2>
-        <p>Minimize business downtime with our structured office moving plans. We work after hours or on weekends to avoid disrupting your work.</p>
-        <p>Our team is experienced in handling office equipment and furniture, ensuring everything arrives safely at your new location.</p>
-        <p>We provide clear communication and coordination to ensure a smooth transition for your business.</p>
+                <!-- Office Relocations Card -->
+                <div class="service-card">
+                    <div class="card-icon">🏢</div>
+                    <h3>Office Relocations</h3>
+                    <p>Minimize business downtime with our structured office moving plans. We work after hours or on weekends to avoid disrupting your work.</p>
+                    <ul class="service-features">
+                        <li>After-hours moving</li>
+                        <li>IT equipment handling</li>
+                        <li>Minimal business disruption</li>
+                        <li>Project management</li>
+                    </ul>
+                    <div class="card-footer">
+                        <span class="price">From R8,000</span>
+                        <button class="card-btn" onclick="scrollToQuote()">Get Quote</button>
+                    </div>
+                </div>
 
-        <h2>Packing Services</h2>
-        <p>Don't have time to pack? We provide all materials and expert packing to ensure your items are safe and secure.</p>
-        <p>Our team is trained in efficient packing techniques to maximize space and protect your belongings.</p>
-        <p>We offer a range of packing options to suit your needs, from DIY packing to full-service packing.</p>
+                <!-- Packing Services Card -->
+                <div class="service-card">
+                    <div class="card-icon">📦</div>
+                    <h3>Packing Services</h3>
+                    <p>Don't have time to pack? We provide all materials and expert packing to ensure your items are safe and secure during transit.</p>
+                    <ul class="service-features">
+                        <li>Professional packing materials</li>
+                        <li>Fragile item specialists</li>
+                        <li>Labeling & inventory management</li>
+                        <li>Custom packing solutions</li>
+                    </ul>
+                    <div class="card-footer">
+                        <span class="price">From R800</span>
+                        <button class="card-btn" onclick="scrollToQuote()">Get Quote</button>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <section class="pricing">
-            <h2>Pricing Packages</h2>
-            <p>All prices in ZAR</p>
+            <h2>Transparent Pricing Packages</h2>
+            <p>All prices in ZAR - No hidden fees, guaranteed</p>
             <ul>
-                <li><strong>Basic:</strong> R1,500 - Loading, transport, unloading (2 rooms)</li>
-                <li><strong>Standard:</strong> R4,000 - Basic + packing materials (3-4 rooms)</li>
-                <li><strong>Premium:</strong> R6,500+ - Standard + full packing service (5+ rooms)</li>
+                <li><strong>Basic Residential:</strong> R1,500 - Loading, transport, unloading (2 rooms)</li>
+                <li><strong>Standard Residential:</strong> R4,000 - Basic + packing materials (3-4 rooms)</li>
+                <li><strong>Premium Residential:</strong> R6,500+ - Standard + full packing service (5+ rooms)</li>
                 <li><strong>Office Move:</strong> R8,000+ - Custom quote based on size and distance</li>
                 <li><strong>International Move:</strong> R15,000+ - Custom quote based on destination and volume</li>
             </ul>
         </section>
         
-        <section class="quote-form">
-            <h2>Request an Instant Quote</h2>
-            <form action="#" method="post">
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="phone">Phone Number:</label>
-                <input type="tel" id="phone" name="phone" required>
-                
-                <label for="move-date">Move Date:</label>
-                <input type="date" id="move-date" name="move_date" required>
-                
-                <label for="from-address">Moving From (Address):</label>
-                <input type="text" id="from-address" name="from_address" required>
-                
-                <label for="to-address">Moving To (Address):</label>
-                <input type="text" id="to-address" name="to_address" required>
-                
-                <label for="rooms">Number of Rooms:</label>
-                <input type="number" id="rooms" name="rooms" min="1" required>
-                
-                <label for="notes">Additional Notes:</label>
-                <textarea id="notes" name="notes" rows="4"></textarea>
-
-                <label for="services">Services Required:</label>
-                <select id="services" name="services" required>
-                    <option value="residential">Residential Move</option>
-                    <option value="office">Office Relocation</option>
-                    <option value="packing">Packing Services</option>
-                </select>
-
-                <label for="insurance">Insurance Coverage:</label>
-                <select id="insurance" name="insurance" required>
-                    <option value="basic">Basic Coverage</option>
-                    <option value="premium">Premium Coverage</option>
-                </select>
-
-                <label for="valuation">Valuation Coverage:</label>
-                <select id="valuation" name="valuation" required>
-                    <option value="basic">Basic Valuation</option>
-                    <option value="full">Full Valuation</option>
-                </select>
-
-                <button type="submit">Get Quote</button>
-
-                <h3>Packing Services</h3>
+        <!-- Service Images Gallery -->
+        <section class="service-gallery">
+            <h2>Our Work in Action</h2>
+            <div class="gallery-grid">
                 <img src="Images/Service/Packing-image.jpg.JPG" 
-    alt="SwiftMove Removals - Packing Services" 
-    style="width: 300px; height: auto; border-radius: 8px; display: inline-block; margin: 10px;">
+                    alt="Professional packing services by SwiftMove Removals - carefully wrapped items"
+                    class="service-image">
+                <img src="Images/Service/service1.JPG" 
+                    alt="SwiftMove moving team loading furniture into truck - residential move"
+                    class="service-image">
+                <img src="Images/Service/service2.JPG" 
+                    alt="Office relocation services - moving office equipment safely"
+                    class="service-image">
+                <img src="Images/Service/service3.JPG" 
+                    alt="SwiftMove professional movers handling fragile items with care"
+                    class="service-image">
+            </div>
+        </section>
 
-    <img src="Images/Service/service1.JPG" 
-    alt="SwiftMove Removals - Packing Services" 
-    style="width: 350px; height: 400px; border-radius: 8px; display: inline-block; margin: 10px;">
+        <section class="quote-form" id="quoteForm">
+            <h2>Request Your Free Instant Quote</h2>
+            <form id="quoteForm" action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number *</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="move-date">Preferred Move Date *</label>
+                    <input type="date" id="move-date" name="move_date" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="from-address">Moving From (Address) *</label>
+                    <input type="text" id="from-address" name="from_address" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="to-address">Moving To (Address) *</label>
+                    <input type="text" id="to-address" name="to_address" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="rooms">Number of Rooms *</label>
+                    <input type="number" id="rooms" name="rooms" min="1" required>
+                </div>
 
-    <img src="Images/Service/service2.JPG" 
-    alt="SwiftMove Removals - Packing Services" 
-    style="width: 350px; height: 400px; border-radius: 8px; display: inline-block; margin: 10px;">
+                <div class="form-group">
+                    <label for="services">Services Required *</label>
+                    <select id="services" name="services" required>
+                        <option value="">Select a service</option>
+                        <option value="residential">Residential Move</option>
+                        <option value="office">Office Relocation</option>
+                        <option value="packing">Packing Services</option>
+                        <option value="combined">Combined Services</option>
+                    </select>
+                </div>
 
-    <img src="Images/Service/service3.JPG" 
-    alt="SwiftMove Removals - Packing Services" 
-    style="width: 350px; height: 400px; border-radius: 8px; display: inline-block; margin: 10px;">
+                <div class="form-group">
+                    <label for="notes">Additional Notes or Special Requirements</label>
+                    <textarea id="notes" name="notes" rows="4" placeholder="Tell us about any fragile items, special requirements, or specific concerns..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Get My Free Quote</button>
             </form>
         </section>
     </main>
@@ -125,6 +237,14 @@
     <footer>
         <p>&copy; 2025 SwiftMove Removals. All rights reserved.</p>
     </footer>
+
+    <script>
+        function scrollToQuote() {
+            document.getElementById('quoteForm').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    </script>
 
 </body>
 </html>

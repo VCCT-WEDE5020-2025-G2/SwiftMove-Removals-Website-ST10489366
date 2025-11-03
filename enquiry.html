@@ -3,14 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>General Enquiry - SwiftMove Removals</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>Moving Enquiry & Quote Request - SwiftMove Removals | Get Free Estimate</title>
+    <meta name="description" content="Get a free moving quote! Enquire about our residential moves, office relocations & packing services. Quick response guaranteed. Call +27 628620181 for immediate assistance.">
+    <meta name="keywords" content="moving quote, relocation enquiry, free estimate, moving consultation, service inquiry, get quote, moving cost estimation">
+    <meta name="author" content="SwiftMove Removals">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Free Moving Quote & Service Enquiry - SwiftMove Removals">
+    <meta property="og:description" content="Get your free moving estimate today! Enquire about our professional moving services and receive a detailed quote within 24 hours.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://swiftmoveremovals.co.za/enquiry.html">
+    <meta property="og:image" content="https://swiftmoveremovals.co.za/images/enquiry-hero.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://swiftmoveremovals.co.za/enquiry.html">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Service Enquiry - SwiftMove Removals",
+        "description": "Moving service enquiry and quote request form",
+        "mainEntity": {
+            "@type": "WebPageElement",
+            "name": "Moving Quote Request Form",
+            "description": "Form to request quotes and information about moving services"
+        }
+    }
+    </script>
+    
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <header>
         <nav>
-                <div class="logo">SwiftMove Removals</div>
+            <div class="logo">SwiftMove Removals</div>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
@@ -22,31 +53,250 @@
     </header>
 
     <main>
-        <h1>Have a Question?</h1>
-        <p>We're here to help! If you have any questions about our services, pricing, or availability, please don't hesitate to send us a message. Our team will get back to you within 24 hours.</p>
-        <p>For urgent inquiries, please call us directly at +27 628620181.</p>
+        <section class="enquiry-hero">
+            <h1>Get Your Free Moving Quote</h1>
+            <p class="hero-subtitle">We're here to help! Get detailed information about our services, pricing, and availability. Our team will provide you with a comprehensive quote within 24 hours.</p>
+            <p class="urgent-notice">For urgent moving enquiries, please call us directly at <a href="tel:+27628620181" class="urgent-phone">+27 628620181</a></p>
+        </section>
+
+        <section class="enquiry-benefits">
+            <h2>Why Enquire With Us?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Free No-Obligation Quotes</h3>
+                    <p>Get detailed pricing with no hidden costs. Our quotes are transparent and comprehensive.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">⏱️</div>
+                    <h3>24-Hour Response</h3>
+                    <p>We guarantee a response to your enquiry within 24 hours, often much sooner.</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">👨‍💼</div>
+                    <h3>Expert Consultation</h3>
+                    <p>Get personalized advice from our moving experts tailored to your specific needs.</p>
+                </div>
+            </div>
+        </section>
         
         <section class="enquiry-form">
-            <form action="#" method="post">
-                <label for="enquiry-name">Name:</label>
-                <input type="text" id="enquiry-name" name="enquiry_name" required>
-                
-                <label for="enquiry-email">Email:</label>
-                <input type="email" id="enquiry-email" name="enquiry_email" required>
-                
-                <label for="enquiry-subject">Subject:</label>
-                <input type="text" id="enquiry-subject" name="enquiry_subject" required>
-                
-                <label for="enquiry-message">Message:</label>
-                <textarea id="enquiry-message" name="enquiry_message" rows="4" required></textarea>
+            <h2>Service Enquiry Form</h2>
+            <p class="form-intro">Please provide details about your moving needs below. The more information you give us, the more accurate our quote will be.</p>
+            
+            <form id="enquiryForm" action="#" method="post">
+                <!-- Personal Information -->
+                <fieldset class="form-section">
+                    <legend>Personal Information</legend>
+                    
+                    <div class="form-group">
+                        <label for="enquiry-name">Full Name *</label>
+                        <input type="text" id="enquiry-name" name="enquiry_name" required minlength="2"
+                               placeholder="Enter your full name">
+                        <span class="error-message" id="name-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="enquiry-email">Email Address *</label>
+                        <input type="email" id="enquiry-email" name="enquiry_email" required
+                               placeholder="your.email@example.com">
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="enquiry-phone">Phone Number *</label>
+                        <input type="tel" id="enquiry-phone" name="enquiry_phone" required
+                               pattern="[0-9]{10}" placeholder="10-digit number (e.g., 628620181)"
+                               title="Please enter a 10-digit phone number">
+                        <span class="error-message" id="phone-error"></span>
+                    </div>
 
-                <label for="enquiry-phone">Phone Number:</label>
-                <input type="tel" id="enquiry-phone" name="enquiry_phone" required>
+                    <div class="form-group">
+                        <label for="enquiry-location">Your Location *</label>
+                        <select id="enquiry-location" name="enquiry_location" required>
+                            <option value="">Select your area</option>
+                            <option value="cape-town">Cape Town</option>
+                            <option value="johannesburg">Johannesburg</option>
+                            <option value="pretoria">Pretoria</option>
+                            <option value="durban">Durban</option>
+                            <option value="other">Other Area</option>
+                        </select>
+                        <span class="error-message" id="location-error"></span>
+                    </div>
+                </fieldset>
 
-                <label for="enquiry-location">Location:</label>
-                <input type="text" id="enquiry-location" name="enquiry_location" required>
+                <!-- Service Information -->
+                <fieldset class="form-section">
+                    <legend>Service Requirements</legend>
+                    
+                    <div class="form-group">
+                        <label for="enquiry-service">Service Interested In *</label>
+                        <select id="enquiry-service" name="enquiry_service" required>
+                            <option value="">Select a service</option>
+                            <option value="residential">Residential Move</option>
+                            <option value="office">Office Relocation</option>
+                            <option value="packing">Packing Services Only</option>
+                            <option value="storage">Storage Solutions</option>
+                            <option value="international">International Move</option>
+                            <option value="multiple">Multiple Services</option>
+                            <option value="unsure">Not Sure - Need Advice</option>
+                        </select>
+                        <span class="error-message" id="service-error"></span>
+                    </div>
 
-                <button type="submit">Send Enquiry</button>
+                    <div class="form-group">
+                        <label for="move-date">Preferred Move Date</label>
+                        <input type="date" id="move-date" name="move_date" 
+                               min="<?php echo date('Y-m-d'); ?>">
+                        <span class="help-text">Select your preferred moving date</span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="property-size">Property Size</label>
+                        <select id="property-size" name="property_size">
+                            <option value="">Select size</option>
+                            <option value="studio">Studio Apartment</option>
+                            <option value="1-bedroom">1 Bedroom</option>
+                            <option value="2-bedroom">2 Bedrooms</option>
+                            <option value="3-bedroom">3 Bedrooms</option>
+                            <option value="4-bedroom">4+ Bedrooms</option>
+                            <option value="office-small">Small Office (&lt;50m²)</option>
+                            <option value="office-medium">Medium Office (50-200m²)</option>
+                            <option value="office-large">Large Office (&gt;200m²)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="budget-range">Estimated Budget Range</label>
+                        <select id="budget-range" name="budget_range">
+                            <option value="">Select budget range</option>
+                            <option value="1000-3000">R1,000 - R3,000</option>
+                            <option value="3000-6000">R3,000 - R6,000</option>
+                            <option value="6000-10000">R6,000 - R10,000</option>
+                            <option value="10000-20000">R10,000 - R20,000</option>
+                            <option value="20000+">R20,000+</option>
+                            <option value="quote-needed">Need a quote</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <!-- Message Details -->
+                <fieldset class="form-section">
+                    <legend>Enquiry Details</legend>
+                    
+                    <div class="form-group">
+                        <label for="enquiry-subject">Enquiry Subject *</label>
+                        <input type="text" id="enquiry-subject" name="enquiry_subject" required minlength="5"
+                               placeholder="Brief subject of your enquiry">
+                        <span class="error-message" id="subject-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="enquiry-message">Detailed Enquiry *</label>
+                        <textarea id="enquiry-message" name="enquiry_message" rows="6" required minlength="20"
+                                  placeholder="Please provide detailed information about your moving needs, including:
+• Number of rooms/office size
+• Special items (piano, artwork, etc.)
+• Any specific requirements or concerns
+• Preferred timeline..."></textarea>
+                        <span class="error-message" id="message-error"></span>
+                        <div class="char-count">
+                            <span id="char-counter">0</span>/1000 characters
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Special Requirements (Select all that apply)</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="special_requirements[]" value="fragile">
+                                <span class="checkmark"></span>
+                                Fragile items (glass, artwork, antiques)
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="special_requirements[]" value="furniture">
+                                <span class="checkmark"></span>
+                                Large furniture disassembly
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="special_requirements[]" value="piano">
+                                <span class="checkmark"></span>
+                                Piano or musical instruments
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="special_requirements[]" value="storage">
+                                <span class="checkmark"></span>
+                                Temporary storage needed
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="special_requirements[]" value="packing">
+                                <span class="checkmark"></span>
+                                Full packing service required
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="referral-source">How did you hear about us?</label>
+                        <select id="referral-source" name="referral_source">
+                            <option value="">Select source</option>
+                            <option value="google">Google Search</option>
+                            <option value="social-media">Social Media</option>
+                            <option value="friend">Friend Referral</option>
+                            <option value="previous-client">Previous Client</option>
+                            <option value="advertisement">Advertisement</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                </fieldset>
+
+                <!-- Consent Section -->
+                <fieldset class="form-section">
+                    <legend>Consent & Submission</legend>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="quote-consent" name="quote_consent" required>
+                            <span class="checkmark"></span>
+                            I consent to receive a detailed quote and consultation for my moving needs *
+                        </label>
+                        <span class="error-message" id="consent-error"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="marketing-consent" name="marketing_consent">
+                            <span class="checkmark"></span>
+                            Send me moving tips, special offers, and company updates
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <span class="checkmark"></span>
+                            I agree to the <a href="#" target="_blank">Terms of Service</a> and <a href="#" target="_blank">Privacy Policy</a> *
+                        </label>
+                        <span class="error-message" id="terms-error"></span>
+                    </div>
+                </fieldset>
+
+                <button type="submit" class="submit-btn" id="submit-btn">
+                    <span class="btn-text">Get Free Quote</span>
+                    <span class="btn-loading" style="display: none;">Processing...</span>
+                </button>
+
+                <div id="form-message" class="form-message"></div>
+
+                <div class="form-note">
+                    <p><strong>What happens next?</strong></p>
+                    <ol>
+                        <li>We'll review your enquiry within 2 hours during business hours</li>
+                        <li>You'll receive a preliminary quote via email</li>
+                        <li>Our consultant will contact you to discuss details</li>
+                        <li>We'll provide a final, binding quote for your approval</li>
+                    </ol>
+                </div>
             </form>
         </section>
     </main>
@@ -54,6 +304,55 @@
     <footer>
         <p>&copy; 2025 SwiftMove Removals. All rights reserved.</p>
     </footer>
+
+    <!-- Link to JavaScript validation -->
+    <script src="js/validation.js"></script>
+    
+    <!-- Additional enquiry page JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Character counter for enquiry message
+            const messageTextarea = document.getElementById('enquiry-message');
+            const charCounter = document.getElementById('char-counter');
+            
+            if (messageTextarea && charCounter) {
+                messageTextarea.addEventListener('input', function() {
+                    const length = this.value.length;
+                    charCounter.textContent = length;
+                    
+                    if (length > 1000) {
+                        charCounter.style.color = '#ff4444';
+                    } else if (length > 800) {
+                        charCounter.style.color = '#ff8800';
+                    } else {
+                        charCounter.style.color = '#666';
+                    }
+                });
+            }
+            
+            // Auto-fill subject based on service selection
+            const serviceSelect = document.getElementById('enquiry-service');
+            const subjectInput = document.getElementById('enquiry-subject');
+            
+            if (serviceSelect && subjectInput) {
+                serviceSelect.addEventListener('change', function() {
+                    if (subjectInput.value === '') {
+                        const serviceText = serviceSelect.options[serviceSelect.selectedIndex].text;
+                        subjectInput.value = `Enquiry about ${serviceText} services`;
+                    }
+                });
+            }
+            
+            // Enhanced phone click tracking
+            const urgentPhone = document.querySelector('.urgent-phone');
+            if (urgentPhone) {
+                urgentPhone.addEventListener('click', function() {
+                    console.log('Urgent enquiry phone call initiated');
+                    // You can add analytics tracking here
+                });
+            }
+        });
+    </script>
 
 </body>
 </html>

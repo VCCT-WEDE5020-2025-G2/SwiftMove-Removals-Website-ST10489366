@@ -3,7 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - SwiftMove Removals</title>
+    
+    <!-- SEO Meta Tags -->
+    <title>Contact SwiftMove Removals - Offices in Cape Town, Johannesburg & Pretoria</title>
+    <meta name="description" content="Contact SwiftMove Removals at +27 628620181. Visit our offices in Cape Town, Johannesburg & Pretoria. Business hours: Mon-Fri 8AM-5PM, Sat 9AM-1PM.">
+    <meta name="keywords" content="contact movers, SwiftMove phone number, moving company contact, Cape Town removals, Johannesburg movers, Pretoria relocation">
+    <meta name="author" content="SwiftMove Removals">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Contact SwiftMove Removals - Multiple Locations Across South Africa">
+    <meta property="og:description" content="Get in touch with our moving experts. Offices in Cape Town, Johannesburg & Pretoria. Call +27 628620181 for free consultation.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://swiftmoveremovals.co.za/contact.html">
+    <meta property="og:image" content="https://swiftmoveremovals.co.za/images/contact-office.jpg">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://swiftmoveremovals.co.za/contact.html">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contact SwiftMove Removals",
+        "description": "Contact information for moving services",
+        "mainEntity": {
+            "@type": "Organization",
+            "name": "SwiftMove Removals",
+            "telephone": "+27-628620181",
+            "email": "info@swiftmoveremovals.co.za",
+            "address": [
+                {
+                    "@type": "PostalAddress",
+                    "streetAddress": "123 Main Street",
+                    "addressLocality": "Cape Town",
+                    "postalCode": "8000",
+                    "addressCountry": "ZA"
+                },
+                {
+                    "@type": "PostalAddress",
+                    "streetAddress": "456 Kruger Street",
+                    "addressLocality": "Johannesburg",
+                    "postalCode": "2000",
+                    "addressCountry": "ZA"
+                },
+                {
+                    "@type": "PostalAddress",
+                    "streetAddress": "456 Kruger Street",
+                    "addressLocality": "Pretoria",
+                    "postalCode": "0002",
+                    "addressCountry": "ZA"
+                }
+            ],
+            "openingHours": [
+                "Mo-Fr 08:00-17:00",
+                "Sa 09:00-13:00"
+            ]
+        }
+    }
+    </script>
+    
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -32,54 +91,139 @@
             <div class="office">
                 <h3>Cape Town Office</h3>
                 <p>123 Main Street, Cape Town, 8000</p>
-                <p>Phone: +27 628620181</p>
+                <p>Phone: <a href="tel:+27628620181">+27 628620181</a></p>
+                <p class="office-hours">Open: Mon-Fri 8:00 AM - 5:00 PM</p>
             </div>
             
             <div class="office">
-                <h3>Pretoria Depot</h3>
-                <p>456 Kruger Street, Pretoria, 0002</p>
-                <p>Phone: +27 12 765 4321</p>
+                <h3>Johannesburg Office</h3>
+                <p>456 Kruger Street, Johannesburg, 2000</p>
+                <p>Phone: <a href="tel:+27628620182">+27 628620182</a></p>
+                <p class="office-hours">Open: Mon-Fri 8:00 AM - 5:00 PM</p>
             </div>
 
             <div class="office">
-                <h3>Johannesburg Office</h3>
-                <p>456 Kruger Street, Johannesburg, 2000</p>
-                <p>Phone: +27 628620182</p>
+                <h3>Pretoria Depot</h3>
+                <p>456 Kruger Street, Pretoria, 0002</p>
+                <p>Phone: <a href="tel:+27127654321">+27 12 765 4321</a></p>
+                <p class="office-hours">Open: Mon-Fri 8:00 AM - 5:00 PM</p>
             </div>
         </section>
         
         <section class="contact-info">
-            <h2>Email</h2>
-            <p>info@swiftmoveremovals.co.za</p>
+            <h2>Contact Information</h2>
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <h3>Email</h3>
+                    <p><a href="mailto:info@swiftmoveremovals.co.za">info@swiftmoveremovals.co.za</a></p>
+                </div>
+                <div class="contact-method">
+                    <h3>Emergency After Hours</h3>
+                    <p><a href="tel:+27628620183">+27 628620183</a></p>
+                </div>
+            </div>
             
             <h2>Operation Hours</h2>
-            <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
-            <p>Saturday: 9:00 AM - 1:00 PM</p>
-            <p>Sunday: Closed</p>
+            <div class="hours-list">
+                <p><strong>Monday - Friday:</strong> 8:00 AM - 5:00 PM</p>
+                <p><strong>Saturday:</strong> 9:00 AM - 1:00 PM</p>
+                <p><strong>Sunday:</strong> Closed</p>
+                <p><strong>Public Holidays:</strong> Closed</p>
+            </div>
         </section>
         
         <section class="contact-form">
             <h2>Send us a Message</h2>
-            <form action="#" method="post">
-                <label for="contact-name">Name:</label>
-                <input type="text" id="contact-name" name="contact_name" required>
+            <p>Have a general question or message? Fill out the form below and we'll get back to you within 24 hours.</p>
+            
+            <form id="contactForm" action="#" method="post">
+                <div class="form-group">
+                    <label for="contact-name">Full Name *</label>
+                    <input type="text" id="contact-name" name="contact_name" required minlength="2" 
+                           placeholder="Enter your full name">
+                    <span class="error-message" id="name-error"></span>
+                </div>
                 
-                <label for="contact-email">Email:</label>
-                <input type="email" id="contact-email" name="contact_email" required>
+                <div class="form-group">
+                    <label for="contact-email">Email Address *</label>
+                    <input type="email" id="contact-email" name="contact_email" required 
+                           placeholder="your.email@example.com">
+                    <span class="error-message" id="email-error"></span>
+                </div>
                 
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" required>
+                <div class="form-group">
+                    <label for="contact-phone">Phone Number *</label>
+                    <input type="tel" id="contact-phone" name="contact_phone" required 
+                           pattern="[0-9]{10}" placeholder="10-digit number (e.g., 628620181)"
+                           title="Please enter a 10-digit phone number">
+                    <span class="error-message" id="phone-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="contact-location">Your Location *</label>
+                    <select id="contact-location" name="contact_location" required>
+                        <option value="">Select your area</option>
+                        <option value="cape-town">Cape Town</option>
+                        <option value="johannesburg">Johannesburg</option>
+                        <option value="pretoria">Pretoria</option>
+                        <option value="other">Other Area</option>
+                    </select>
+                    <span class="error-message" id="location-error"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="message-type">Message Type *</label>
+                    <select id="message-type" name="message_type" required>
+                        <option value="">Select message type</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="complaint">Complaint</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="partnership">Partnership</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <span class="error-message" id="type-error"></span>
+                </div>
                 
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4" required></textarea>
+                <div class="form-group">
+                    <label for="subject">Subject *</label>
+                    <input type="text" id="subject" name="subject" required minlength="5"
+                           placeholder="Brief subject of your message">
+                    <span class="error-message" id="subject-error"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Your Message *</label>
+                    <textarea id="message" name="message" rows="6" required minlength="10"
+                              placeholder="Please provide details of your inquiry..."></textarea>
+                    <span class="error-message" id="message-error"></span>
+                    <div class="char-count">
+                        <span id="char-counter">0</span>/500 characters
+                    </div>
+                </div>
 
-                <label for="contact-phone">Phone Number:</label>
-                <input type="tel" id="contact-phone" name="contact_phone" required>
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="newsletter" name="newsletter">
+                        <span class="checkmark"></span>
+                        Send me updates and special offers from SwiftMove Removals
+                    </label>
+                </div>
 
-                <label for="contact-location">Location:</label>
-                <input type="text" id="contact-location" name="contact_location" required>
+                <div class="form-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="terms" name="terms" required>
+                        <span class="checkmark"></span>
+                        I agree to the <a href="#" target="_blank">Terms of Service</a> and <a href="#" target="_blank">Privacy Policy</a> *
+                    </label>
+                    <span class="error-message" id="terms-error"></span>
+                </div>
 
-                <button type="submit">Send Message</button>
+                <button type="submit" class="submit-btn" id="submit-btn">
+                    <span class="btn-text">Send Message</span>
+                    <span class="btn-loading" style="display: none;">Sending...</span>
+                </button>
+
+                <div id="form-message" class="form-message"></div>
             </form>
         </section>
     </main>
@@ -87,6 +231,49 @@
     <footer>
         <p>&copy; 2025 SwiftMove Removals. All rights reserved.</p>
     </footer>
+
+    <!-- Link to JavaScript validation -->
+    <script src="js/validation.js"></script>
+    
+    <!-- Additional contact page JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Character counter for message textarea
+            const messageTextarea = document.getElementById('message');
+            const charCounter = document.getElementById('char-counter');
+            
+            if (messageTextarea && charCounter) {
+                messageTextarea.addEventListener('input', function() {
+                    const length = this.value.length;
+                    charCounter.textContent = length;
+                    
+                    if (length > 500) {
+                        charCounter.style.color = '#ff4444';
+                    } else if (length > 400) {
+                        charCounter.style.color = '#ff8800';
+                    } else {
+                        charCounter.style.color = '#666';
+                    }
+                });
+            }
+            
+            // Clickable phone numbers and emails
+            const phoneLinks = document.querySelectorAll('a[href^="tel:"]');
+            const emailLinks = document.querySelectorAll('a[href^="mailto:"]');
+            
+            phoneLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    console.log('Phone number clicked:', this.href);
+                });
+            });
+            
+            emailLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    console.log('Email clicked:', this.href);
+                });
+            });
+        });
+    </script>
 
 </body>
 </html>

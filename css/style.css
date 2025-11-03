@@ -1,59 +1,69 @@
-/* css/style.css */
-/* Modern CSS Reset and Base Styles */
-* {
+   /* CSS Reset */
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+/* ==================== BASE STYLES ==================== */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
     color: #000000;
-    background-color: hsl(0, 100%, 99%);
+    background-color: #ffffff;
 }
 
 /* ==================== HEADER & NAVIGATION ==================== */
 header {
-    background-color: #003366; /* Navy Blue */
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-    position: relative;
+    background-color: #003366;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
     top: 0;
-    z-index: 50;
+    z-index: 1000;
 }
-header .logo {
-    color: rgb(9, 229, 241);
-    font-size: 2rem;
-    font-weight: bold;
-    padding: 1rem 2rem;
-    display: inline-block;
-    text-size-adjust: 100%;
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    color: #09e5f1;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 nav ul {
     list-style: none;
-    text-align: center;
-    padding: 2rem 0;
-}
-
-nav ul li {
-    display: inline-block;
-    margin: 0 20px;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 1rem 0;
 }
 
 nav ul li a {
-    color: rgb(9, 255, 0);
+    color: #09ff00;
     text-decoration: none;
     font-weight: 600;
     font-size: 1.1rem;
-    padding: 5px 10px;
+    padding: 0.5rem 1rem;
     border-radius: 4px;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
-    background-color: #FF6600; /* Orange */
+    background-color: #FF6600;
+    color: rgb(255, 255, 255);
 }
 
 /* ==================== MAIN CONTENT AREA ==================== */
@@ -61,7 +71,7 @@ main {
     padding: 2rem;
     max-width: 1200px;
     margin: 0 auto;
-    min-height: 70vh; /* Pushes footer down */
+    min-height: 70vh;
 }
 
 /* Headings */
@@ -82,12 +92,14 @@ h2 {
 h3 {
     color: #003366;
     margin: 1.5rem 0 0.5rem 0;
+    font-size: 1.3rem;
 }
 
 /* Paragraphs and Lists */
 p {
     margin-bottom: 1rem;
     font-size: 1.1rem;
+    line-height: 1.6;
 }
 
 ul, ol {
@@ -101,7 +113,7 @@ li {
 
 /* ==================== HOMEPAGE HERO SECTION ==================== */
 .hero {
-    background-image: linear-gradient(rgb(0, 0, 0), rgba(3, 248, 228, 0.485)), url('../images/Heroes/moving_truck_hero.jpg');
+    background-image: linear-gradient(rgba(17, 177, 182, 0.7), rgba(0, 0, 0, 0.7)), url('../images/Heroes/moving_truck_hero.jpg');
     background-size: cover;
     background-position: center;
     min-height: 500px;
@@ -109,7 +121,7 @@ li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: rgb(0, 0, 0);
+    color: white;
     padding: 2rem;
     text-align: center;
     border-radius: 10px;
@@ -121,12 +133,14 @@ li {
     border-bottom: none;
     font-size: 3rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    margin-bottom: 1rem;
 }
 
 .hero p {
     font-size: 1.5rem;
     margin-bottom: 2rem;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    color: white;
 }
 
 .cta-button {
@@ -138,6 +152,7 @@ li {
     border-radius: 5px;
     font-size: 1.2rem;
     transition: all 0.3s ease;
+    display: inline-block;
 }
 
 .cta-button:hover {
@@ -146,28 +161,137 @@ li {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
+/* ==================== SERVICES CARD LAYOUT ==================== */
+.services-overview {
+    margin: 3rem 0;
+}
+
+.services-intro {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.service-card {
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.service-card h3 {
+    color: #003366;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.service-card p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.service-features {
+    list-style: none;
+    margin: 1.5rem 0;
+    padding: 0;
+}
+
+.service-features li {
+    padding: 0.5rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.service-features li::before {
+    content: "✓";
+    color: #FF6600;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+.card-footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+    border-top: 1px solid #eee;
+}
+
+.price {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #003366;
+}
+
+.card-btn {
+    background: #FF6600;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.card-btn:hover {
+    background: #E55A00;
+}
+
 /* ==================== TESTIMONIALS SECTION ==================== */
 .testimonials {
-    background-color: white;
-    padding: 2rem;
+    background-color: #f8f9fa;
+    padding: 3rem 2rem;
     border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    margin: 2rem 0;
+    margin: 3rem 0;
 }
 
 .testimonials p {
     font-style: italic;
     border-left: 4px solid #FF6600;
     padding-left: 1rem;
+    margin-bottom: 1.5rem;
 }
 
-/* ==================== TEAM SECTION (About Page) ==================== */
+/* ==================== TEAM SECTION ==================== */
 .team-member {
     background-color: white;
-    padding: 1.5rem;
+    padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    margin: 1.5rem 0;
+    margin: 2rem 0;
     text-align: center;
 }
 
@@ -180,10 +304,10 @@ li {
     margin: 0 auto 1rem auto;
 }
 
-/* ==================== PRICING SECTION (Services Page) ==================== */
+/* ==================== PRICING SECTION ==================== */
 .pricing {
     background-color: white;
-    padding: 1.5rem;
+    padding: 2rem;
     border-radius: 10px;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
     margin: 2rem 0;
@@ -195,8 +319,9 @@ li {
 }
 
 .pricing li {
-    padding: 0.5rem 0;
+    padding: 0.8rem 0;
     border-bottom: 1px solid #eee;
+    font-size: 1.1rem;
 }
 
 .pricing li:last-child {
@@ -207,8 +332,134 @@ li {
     color: #FF6600;
 }
 
-/* ==================== FORM STYLES (All Pages) ==================== */
+/* ==================== FORM STYLES ==================== */
 form {
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin: 2rem 0;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #003366;
+    font-size: 1rem;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 12px 15px;
+    margin-bottom: 0.5rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #FF6600;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(255, 102, 0, 0.1);
+}
+
+button, .submit-btn {
+    background: #003366;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    font-family: inherit;
+}
+
+button:hover, .submit-btn:hover {
+    background: #FF6600;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(255, 102, 0, 0.3);
+}
+
+/* ==================== FORM VALIDATION STYLES ==================== */
+input:invalid, textarea:invalid, select:invalid {
+    border-color: #ff4444;
+    background-color: #fff8f8;
+}
+
+input:valid, textarea:valid, select:valid {
+    border-color: #00C851;
+    background-color: #f8fff8;
+}
+
+.error-message {
+    color: #ff4444;
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+    display: none;
+}
+
+.char-count {
+    text-align: right;
+    font-size: 0.8rem;
+    color: #666666;
+    margin-top: 0.25rem;
+}
+
+.form-message {
+    padding: 1rem;
+    border-radius: 6px;
+    margin-top: 1rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.form-message.success {
+    background: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+}
+
+.form-message.error {
+    background: #f8d7da;
+    color: #721c24;
+    border: 1px solid #f5c6cb;
+}
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    z-index: 10000;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    max-width: 400px;
+    transform: translateX(100%);
+}
+
+.notification.success {
+    background: #4CAF50;
+}
+
+.notification.error {
+    background: #f44336;
+}
+
+/* ==================== CONTACT PAGE STYLES ==================== */
+.locations, .contact-info {
     background-color: white;
     padding: 2rem;
     border-radius: 10px;
@@ -216,56 +467,9 @@ form {
     margin: 2rem 0;
 }
 
-label {
-    display: block;
-    margin-bottom: 0.5rem;
-    font-weight: 600;
-    color: #003366;
-}
-
-input, textarea, select {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 1.5rem;
-    border: 2px solid #ddd;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: border-color 0.3s ease;
-}
-
-input:focus, textarea:focus, select:focus {
-    border-color: #FF6600;
-    outline: none;
-}
-
-button {
-    background-color: #003366;
-    color: white;
-    padding: 12px 30px;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    font-weight: bold;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button:hover {
-    background-color: #FF6600;
-}
-
-/* ==================== CONTACT & OFFICE SECTIONS ==================== */
-.locations, .contact-info {
-    background-color: white;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
-    margin: 1.5rem 0;
-}
-
 .office {
-    margin-bottom: 1.5rem;
-    padding-bottom: 1.5rem;
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
     border-bottom: 1px solid #eee;
 }
 
@@ -273,6 +477,215 @@ button:hover {
     border-bottom: none;
     margin-bottom: 0;
     padding-bottom: 0;
+}
+
+.contact-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 1.5rem 0;
+}
+
+.contact-method {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 4px solid #003366;
+}
+
+.contact-method h3 {
+    margin-top: 0;
+    color: #003366;
+}
+
+.hours-list p {
+    margin-bottom: 0.5rem;
+    padding-left: 1rem;
+    border-left: 3px solid #FF6600;
+}
+
+.office-hours {
+    font-style: italic;
+    color: #666;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+}
+
+/* ==================== ENQUIRY PAGE STYLES ==================== */
+.enquiry-hero {
+    background: linear-gradient(135deg, #003366 0%, #004080 100%);
+    color: white;
+    padding: 3rem 2rem;
+    border-radius: 12px;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.enquiry-hero h1 {
+    color: white;
+    border-bottom: none;
+}
+
+.hero-subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    opacity: 0.9;
+    color: white;
+}
+
+.urgent-notice {
+    background: rgba(255, 102, 0, 0.2);
+    padding: 1rem;
+    border-radius: 6px;
+    border-left: 4px solid #FF6600;
+    margin-top: 1rem;
+    color: white;
+}
+
+.urgent-phone {
+    color: #FF6600;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.urgent-phone:hover {
+    text-decoration: underline;
+}
+
+.enquiry-benefits {
+    margin: 3rem 0;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.benefit-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.benefit-card:hover {
+    transform: translateY(-5px);
+}
+
+.benefit-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.benefit-card h3 {
+    color: #003366;
+    margin-bottom: 1rem;
+}
+
+.form-section {
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    background: #f8f9fa;
+}
+
+.form-section legend {
+    font-weight: bold;
+    color: #003366;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    background: white;
+    border-radius: 4px;
+}
+
+.form-intro {
+    background: #e3f2fd;
+    padding: 1.5rem;
+    border-radius: 6px;
+    border-left: 4px solid #2196F3;
+    margin-bottom: 2rem;
+}
+
+.help-text {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 0.25rem;
+    display: block;
+}
+
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+    margin-bottom: 0.5rem;
+    font-weight: normal;
+}
+
+.checkbox-label input {
+    width: auto;
+    margin-right: 0.5rem;
+    margin-top: 0.25rem;
+}
+
+.form-note {
+    background: #e8f5e8;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+    border-left: 4px solid #4CAF50;
+}
+
+.form-note ol {
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+}
+
+.form-note li {
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+/* ==================== IMAGE STYLES ==================== */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+.service-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+    margin: 1rem 0;
+}
+
+.service-image:hover {
+    transform: scale(1.05);
+}
+
+.service-gallery {
+    margin: 3rem 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
 }
 
 /* ==================== FOOTER ==================== */
@@ -284,20 +697,133 @@ footer {
     margin-top: 3rem;
 }
 
-/* ==================== IMAGE STYLES ==================== */
-img {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    border-radius: 8px;
-    display: block;
-    margin: 20px auto;
+/* ==================== RESPONSIVE DESIGN ==================== */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+    }
+    
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+    
+    nav ul li a {
+        display: block;
+        padding: 0.8rem;
+    }
+    
+    .logo {
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+    
+    main {
+        padding: 1rem;
+    }
+    
+    .hero h1 {
+        font-size: 2rem;
+    }
+    
+    .hero p {
+        font-size: 1.2rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .contact-methods {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-section {
+        padding: 1rem;
+    }
+    
+    .card-footer {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    
+    .card-btn {
+        width: 100%;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
 }
-.logo img {
-    width: 20px;
-    height: 20px;
-    border-radius: 8px;
-    display: block;
-    margin: 10px auto;
-    font-weight: 1.8rem;
+
+@media (max-width: 480px) {
+    .hero {
+        min-height: 400px;
+        padding: 1rem;
+    }
+    
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+    
+    .cta-button {
+        padding: 12px 25px;
+        font-size: 1rem;
+    }
+    
+    .service-card {
+        padding: 1.5rem;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ==================== ACCESSIBILITY ==================== */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Focus styles for accessibility */
+button:focus, 
+input:focus, 
+textarea:focus, 
+select:focus, 
+.cta-button:focus {
+    outline: 2px solid #FF6600;
+    outline-offset: 2px;
+}
+
+/* High contrast support */
+@media (prefers-contrast: high) {
+    .hero {
+        background-image: none;
+        background-color: #003366;
+    }
+    
+    .service-card:hover {
+        transform: none;
+        border-color: #003366;
+    }
 }
